@@ -43,6 +43,8 @@ INSTALLED_APPS = [
 import pymysql
 pymysql.install_as_MySQLdb()
 
+MEDIA_ROOT = '%s/courses/static/' % BASE_DIR
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',

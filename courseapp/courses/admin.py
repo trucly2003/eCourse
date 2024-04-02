@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Category
+from .models import Category, Courses, Lesson, Tags
 
 class CategoryAdmin(admin.ModelAdmin):
     list_display = ['id', 'name']
@@ -8,3 +8,6 @@ class CategoryAdmin(admin.ModelAdmin):
 
 # Register your models here.
 admin.site.register(Category, CategoryAdmin)
+admin.site.register(Courses)
+admin.site.register(Lesson)
+admin.site.register(Tags)
